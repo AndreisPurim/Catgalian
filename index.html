@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catgalian - C in Latgalian</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1><em>Catgalian</em>: Programming C in Latgalian</h1>
+      <p><em>Catgalian</em> (C plus Latgalian) is an esolang/joke programming language inspired by the Latgalian dialect based on Mini-C. It is not meant to be taken seriously, so have fun.</p>
+    </header>
+    <main>
+      <section class="editor-container">
+        <code-bedder id="editor" data-language="clike" onhighlight="Prism.highlightElement(this)">
+funkceja pārbaudīt(x){
+  ja(x > 0){
+        drukāt("Pozitīvs skaitlis");
+    } cytaiz {
+        drukāt("Negatīvs skaitlis");
+    }
+}
+// cypars x = laseit()
+cypars x = 10
+pārbaudīt(x);
+        </code-bedder>
+        <div class="button-container">
+          <button id="runButton" onclick="runCode()">Run</button>
+        </div>
+        <div class="output-container">
+          <h2>Output:</h2>
+          <pre id="output"></pre>
+        </div>
+      </section>
+      <section class="keywords">
+        <p>
+            <strong>Disclaimer 1:</strong> I don't speak Latgalian at all, so feel free to make corrections. Also, feel free to contribute to the code or language.
+        </p>
+        <p>
+            <strong>Disclaimer 2:</strong> For now, the best I have is a silly "compiler" that transforms the <em>catgalian</em> input into JavaScript and runs <em>eval()</em> to display the output on the website. It took around 30 minutes to make, so it is not intended to be serious. However, I do plan to explain <em>Catgalian</em> as a fully functional language in the near future!
+        </p>
+        <h2 id="keywords">&gt;&gt;&gt; Keywords &lt;&lt;&lt;</h2>
+        <h3 id="control-structures">Control Structures</h3>
+        <ul>
+            <li>
+                <strong><code>ja</code></strong>: if statement. 
+                <code>ja (x &gt; 0) { drukāt(&quot;Pozitīvs&quot;); }</code>
+            </li>
+            <li>
+                <strong><code>cytaiz</code></strong>: else statement. 
+                <code>ja (x &gt; 0) { drukāt(&quot;Pozitīvs&quot;); } cytaiz { drukāt(&quot;Negatīvs&quot;); }</code>
+            </li>
+            <li>
+                <strong><code>cikom</code></strong>: while loop. 
+                <code>cikom (i &lt; 10) { drukāt(i); i++; }</code>
+            </li>
+            <li>
+                <strong><code>par</code></strong>: for loop. 
+                <code>par (i = 0; i &lt; 10; i++) { drukāt(i); }</code>
+            </li>
+            <li>
+                <strong><code>puortraukums</code></strong>: break statement. 
+            </li>
+            <li>
+                <strong><code>turpynuot</code></strong>: continue statement. 
+            </li>
+        </ul>
+    
+        <h3 id="functions">Functions</h3>
+        <ul>
+            <li>
+                <strong><code>funkceja</code></strong>: Declares a function. 
+                <code>funkceja skaitīt(a, b) { atgrīzt a + b; }</code>
+            </li>
+            <li>
+                <strong><code>atgrīzt</code></strong>: Returns a value from a function.
+            </li>
+        </ul>
+    
+        <h3 id="data-types">Data Types</h3>
+        <ul>
+            <li><strong><code>cypars</code></strong>: <code>number</code></li>
+            <li><strong><code>vuords</code></strong>: <code>string</code></li>
+            <li><strong><code>tukšums</code></strong>: <code>void</code></li>
+        </ul>
+    
+        <h3 id="input-output">Input/Output</h3>
+        <ul>
+            <li>
+                <strong><code>drukāt</code></strong>: Outputs text. 
+                <code>drukāt(&quot;Loba Dīna!&quot;);</code>
+            </li>
+            <li>
+                <strong><code>laseit</code></strong>: Reads user input. 
+                <code>cypars vecums = laseit(&quot;Īroksti vacumu:&quot;);</code>
+            </li>
+        </ul>
+    
+        <h3 id="operators">Operators</h3>
+        <ul>
+            <li>Logical: <code>&amp;&amp;</code>, <code>||</code>, <code>!</code></li>
+            <li>Arithmetic: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></li>
+            <li>Comparison: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></li>
+        </ul>
+    </section>
+    
+    </main>
+
+    <footer>
+      Made with 💻❤️🇱🇻 by 
+      <a href="https://github.com/AndreisPurim" target="_blank">[andreis.purim]</a>
+    </footer>
+
+    <script src="codebedder.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
