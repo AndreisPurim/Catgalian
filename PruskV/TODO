@@ -1,0 +1,11 @@
+Basically, a Risc-V inspired Old Prussian assembly language.
+
+Other than being a very basic assembly I have not thought on any specific thing,
+except the idea that the assembler should tell the tale of the code as an heroic saga, such as
+
+"In the beginning, the warrior loaded his sword (R1) into his bag (memory)..."
+
+And that the errors should be ominous, like:
+
+"CURSE: "Your program lacks harmony; the gods demand balance at line 24."
+

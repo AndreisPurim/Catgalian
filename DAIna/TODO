@@ -1,0 +1,11 @@
+Idea: make a truly esoteric programming language based on Dainas.
+
+People should programm writing poems, such as
+
+"A young lad walks through the field,  # Initialize a loop
+In his hand five stones he holds.    # Define range (1-5)
+He counts them one by one,           # Summing up
+Until the bag is full.               # Output result"
+
+And the program should be able to interpret it (the best it can) and output a code.
+
